@@ -1,0 +1,146 @@
+body{
+    font-family: "Poppins";
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBFBF2;
+    color: #847577;
+}
+.Name{
+    font-size: 30px;
+    width: 50%; 
+    margin: 0 auto; 
+}
+button{
+    border-radius: 10px 0 10px 0;
+    color: white;
+    background-color: #847577;
+    padding: 10px;
+    transition: 0.5s ease;
+    margin: 7px 7px 0px 7px;
+    font-size: 17px;
+}
+button:hover{
+    background-color: #FBFBF2;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.buttons{
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px;
+
+}
+.hidden-text{
+    display: none;
+    animation: fadeIn 1s ease-out
+}
+.headers{
+    color: white;
+    text-align: center;
+    
+}
+h1{
+    border-radius: 10px 0px 10px 0;
+    border: solid #847577;
+    text-align: center;
+    color: #847577;
+    padding: 10px;
+}
+h2{ 
+    font-size: 28px;
+    color: #847577;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+table 
+{
+    margin: auto;
+    border: 3px solid lightgrey;
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+th, td 
+{
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+th 
+{
+    text-align: center;
+}
+.links{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.content{
+    text-align: center;
+}
+#scriptDescriptionContainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc; /* Add a border */
+}
+#searchContainer {
+    text-align: center;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+  }
+
+  #searchInput {
+    width: 300px; /* Set a width for the input */
+    padding: 5px; /* Add some padding for spacing inside the input */
+  }
+
+  .searchButton {
+    padding: 5px 10px; /* Add padding for spacing inside the button */
+  }
+
+  #searchResults {
+    display: flex;
+    justify-content: center;
+  }
+
+  #resultsTable {
+    border-collapse: collapse;
+    width: 70%; /* Set a width for the table */
+  }
+
+  #resultsTable th, #resultsTable td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Add padding for spacing inside table cells */
+    text-align: left;
+  }
+  #container {
+    text-align: center;
+}
+
+#resultsContainer, #scriptDescriptionContainer {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#resultsContainer {
+    width: 60%; /* Adjust the width as needed */
+}
+
+#scriptDescriptionContainer {
+    width: 30%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc; /* Add a border */
+}
+.footer-content{
+    float: right;
+}

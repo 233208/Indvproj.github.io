@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Wójcik</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="sitescript.js"></script>
+    <link rel="stylesheet" href="example_table_css.txt">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class = "Name">
+    <h1><span>Mateusz Wójcik</span></h1>
+    </div>
+    <div class="autor">
+        
+        <div class="buttons">
+        <button onclick="showText(1)">Uczelnia</button>
+        <button onclick="showText(2)">Kierunek Studiów</button>
+        <button onclick="showText(3)">Dlaczego</button>
+        <button onclick="showText(4)">Co chcę osiągnąć</button>
+        <button onclick="showText(5)">Dotychczasowe osiągnięcia</button>
+        <button onclick="showText(6)">Plany zawodowe</button>
+        <button onclick="showText(7)">Hobby</button>
+    </div>
+        <div class="headers">
+        <h2 id = "header1" class="hidden-text">Uniwersytet Ekonomiczny w Krakowie.</h2>
+        <h2 id = "header2" class="hidden-text">Informatyka stosowana.</h2>
+        <h2 id = "header3" class="hidden-text">Rozpocząłem studia infromatycze ze względu na swoją pasję do komputerów. Przed rozpoczęciem studiów uczęszczałem do technikum o profilu informatycznym. Poprzez studiowanie infromatyki stosowanej mogę poszerzać swoją wiedzę w dziedzinie, która mnie pasjonuje.  </h2>
+        <h2 id = "header4" class="hidden-text">Za pomocą uzyskanej wiedzy na wybranym kierunku i tytułu, który planuję osiągnąć, chcę ułatwić sobie znalezienie pracy w zawodzie.</h2>
+        <h2 id = "header5" class="hidden-text">Osiągnięcie wyniku 99% z egzaminu na tytuł: Technik Informatyk</h2>
+        <h2 id = "header6" class="hidden-text">Planuję znaleźć pracę w zawodzie, najprawdopodobniej związaną z programowaniem.</h2>
+        <h2 id = "header7" class="hidden-text">Moim hobby jest granie w gry komputerowe, bieganie oraz gra w badmintona.</h2>
+        </div>
+    </div>
+    </header>
+    <div class="Dane">
+        <script src="script.js"></script>
+        <table id="dataTable">
+            <tbody></tbody>
+        </table>
+    
+      <script src="script.js"></script>
+    </div>
+    <div class="file_types">
+        <table>
+        <th>CSV</th>
+        <th>XML</th>
+        <th>JSON</th>
+        <tr>
+        <td>
+        <span>
+        Struktura:<br>
+        CSV to format tekstu, w którym dane są przechowywane w formie tabelarycznej, a każda linijka reprezentuje rekord, <br>
+        a kolumny są oddzielone przecinkami.<br>
+        Prostota:<br>
+        Jest prosty i łatwy do zrozumienia, co sprawia, że jest często używany do przechowywania danych tabelarycznych.<br>
+        Brak Struktury:<br>
+        W przeciwieństwie do XML i JSON, CSV nie posiada wbudowanej struktury ani informacji o typach danych.<br>
+        Jest bardziej płaski i nie zawiera hierarchii.<br>
+        Zastosowania:<br>
+        CSV jest powszechnie używany w arkuszach kalkulacyjnych, bazach danych, a także jako format eksportu/importu danych.<br>
+        </span>
+        </td>
+        <td>
+        <span>
+        Struktura:<br>
+        XML to język znaczników, co oznacza, że dane są przechowywane w postaci tekstu z wykorzystaniem znaczników<br>
+        otwierających i zamykających.<br>
+        Jest to samodzielny format, co oznacza, że każdy dokument XML zawiera informacje o swojej strukturze, <br>
+        dzięki czemu jest bardziej czytelny dla ludzi.<br>
+        Rozszerzalność:  <br>  
+        XML jest "rozszerzalny", co oznacza, że możesz definiować niestandardowe znaczniki i struktury danych, <br>
+        co sprawia, że jest bardziej elastyczny.<br>
+        Zastosowania:<br> 
+        XML jest szeroko stosowany w różnych dziedzinach, takich jak <br>
+        przetwarzanie dokumentów, konfiguracja aplikacji, przesyłanie danych między aplikacjami, itp.</td>
+        </span>
+        <td>
+        <span>
+        Struktura:<br>
+        JSON to lekki format danych, zapisywany jako obiekt JavaScript. <br>
+        Składa się z par klucz-wartość i może reprezentować różne typy danych, takie jak <br>
+        liczby, ciągi znaków, tablice, obiekty, itp.<br>
+        Czytelność:<br>
+        Jest łatwy do zrozumienia dla ludzi, a jednocześnie łatwy do przetwarzania przez maszyny.<br>
+        Rozszerzalność:<br>
+        Podobnie jak XML, JSON jest elastyczny i umożliwia definiowanie niestandardowych struktur danych.<br>
+        Zastosowania:<br>
+        Jest szeroko używany w przeglądarkach internetowych do przesyłania danych między klientem a serwerem (AJAX),<br>
+        w aplikacjach internetowych, a także jako format wymiany danych w API.<br>
+        </span>
+        </td>
+        </tr>
+        </table>
+    </div>
+    <div class="links">
+        <button onclick="showContent(1)">CSV</button>
+        <button onclick="showContent(2)">XML</button>
+        <button onclick="showContent(3)">JSON</button>
+    </div>
+    <div class="content">
+        <p id="content1" class="hidden-text"><embed src="MOCK_DATA.txt" width="500px" height="400px"></p>
+        <p id="content2" class="hidden-text"><embed src="dataset.xml" width="500px" height="400px"></p>
+        <p id="content3" class="hidden-text"><embed src="MOCK_DATA.json" width="500px" height="400px"></p>
+    </div>
+    <div class="Internet">
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search Wikipedia">
+            <button onclick="searchWikipedia()" class="searchButton">Search</button>
+            <button onclick="toggleScriptDescription()" class="searchButton">Toggle Script Description</button>        </div>
+          
+          <div id="searchResults">
+            <table id="resultsTable"></table>
+          </div>
+          <div id="scriptDescription" style="display: none; width: 50%; margin: auto; justify-content: center; text-align: center;">
+            <p>Skrypt wyszukjący zwraca pierwsze 4 wyniki z platformy Wikipedia. Tworzy tabelę o dwóch kolumnach - "Tytuł", która zawiera tytuł zwróconego wyniku oraz "Tekst", która zawiera kilka pierwszych linijek opisu wyniku. Wyniki są zwracane za pomącą skryptu w JavaScript. Łączy się z Wikipedia za pomocą API.</p>
+        </div>
+<script>
+  function searchWikipedia() {
+    var searchTerm = document.getElementById('searchInput').value;
+
+    var apiKey = 'api.php?action=parse&page=Pet_door&format=json';
+    var apiUrl = 'https://en.wikipedia.org/w/api.php';
+
+    $.ajax({
+      url: apiUrl,
+      data: {
+        action: 'query',
+        list: 'search',
+        srsearch: searchTerm,
+        format: 'json',
+        origin: '*',
+        utf8: 1,
+        formatversion: 2,
+        key: apiKey, 
+      },
+      success: function (data) {
+        displayResults(data.query.search.slice(0, 4)); 
+      },
+      error: function (error) {
+        console.log(error);
+      },
+    });
+  }
+
+  function displayResults(results) {
+    var resultsTable = document.getElementById('resultsTable');
+    resultsTable.innerHTML = '';
+
+    var headerRow = resultsTable.insertRow(0);
+    var titleHeader = headerRow.insertCell(0);
+    titleHeader.innerHTML = '<b>Tytuł</b>';
+    var snippetHeader = headerRow.insertCell(1);
+    snippetHeader.innerHTML = '<b>Tekst</b>';
+
+    results.forEach(function (result) {
+      var row = resultsTable.insertRow(-1);
+      var titleCell = row.insertCell(0);
+      var snippetCell = row.insertCell(1);
+
+      titleCell.innerHTML = result.title;
+      snippetCell.innerHTML = result.snippet;
+    });
+  }
+  function toggleScriptDescription() {
+            var scriptDescription = document.getElementById('scriptDescription');
+            var currentDisplay = scriptDescription.style.display;
+
+            if (currentDisplay === 'none' || currentDisplay === '') {
+                scriptDescription.style.display = 'block';
+            } else {
+                scriptDescription.style.display = 'none';
+            }
+        }
+</script>
+
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Mateusz Wójcik. All rights reserved. | Designed by <span id="Qlisty">[Mateusz Wójcik]</span></p>
+    </div>
+</footer>
+</body>
+</html>

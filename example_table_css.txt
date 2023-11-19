@@ -1,0 +1,19 @@
+table 
+{
+    margin: auto;
+    border: 3px solid lightgrey;
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+th, td 
+{
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+th 
+{
+    text-align: center;
+}

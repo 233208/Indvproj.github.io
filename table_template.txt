@@ -1,0 +1,23 @@
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <!-- Write your table headers here -->
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <!-- Add more headers if needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be imported here -->
+        </tbody>
+    </table>
+
+  <script src="script.js"></script>
